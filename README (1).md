@@ -12,7 +12,7 @@ A custom Raspberry Pi HAT that pairs an onboard **Wemos D1 Mini (ESP8266)** and 
 
 This project is a two-tier hardware stack:
 
-1. **Custom Raspberry Pi HAT (green PCB)** — a carrier board that mounts directly on the Pi's 40-pin GPIO header and breaks out power, UART, and mounting for the daughterboard below.
+1. **Custom Raspberry Pi HAT (green PCB)** a carrier board that mounts directly on the Pi's 40-pin GPIO header and breaks out power, UART, and mounting for the daughterboard below.
 2. **ESP8266 + OLED daughterboard** — a Wemos D1 Mini running the WiFi monitoring firmware, paired with an SSD1306 128x64 I2C OLED that renders live stats. This talks to the Raspberry Pi over UART (TX/RX), so the Pi can log, relay, or act on the data the ESP8266 collects.
 
 The D1 Mini puts its WiFi radio into monitor/promiscuous mode and continuously samples 802.11 traffic, auto-hopping channels, while streaming a live summary to its own OLED **and** to the Pi over serial.
